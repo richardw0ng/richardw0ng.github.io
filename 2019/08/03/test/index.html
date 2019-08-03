@@ -77,13 +77,19 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中设置日志级别log4j可以用于控制日志输出的级别 123import org.apache.log4j.&amp;#123;Level, Logger&amp;#125;// TODO: 设置日志级别Logger.getRootLogger.setLevel(Level.WARN)  创建SparkContext">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/08/03/test/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中设置日志级别log4j可以用于控制日志输出的级别 123import org.apache.log4j.&amp;#123;Level, Logger&amp;#125;// TODO: 设置日志级别Logger.getRootLogger.setLevel(Level.WARN)  创建SparkContext">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="c:%5CUsers%5CRichardWong%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564753791857.png">
+<meta property="og:updated_time" content="2019-08-03T04:05:29.870Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中设置日志级别log4j可以用于控制日志输出的级别 123import org.apache.log4j.&amp;#123;Level, Logger&amp;#125;// TODO: 设置日志级别Logger.getRootLogger.setLevel(Level.WARN)  创建SparkContext">
+<meta name="twitter:image" content="c:%5CUsers%5CRichardWong%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1564753791857.png">
 
 
 
@@ -113,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/03/test/">
 
 
 
 
 
-  <title>Hexo</title>
+  <title> | Hexo</title>
   
 
 
@@ -138,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -212,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -244,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/03/test/" itemprop="url">Untitled</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -296,9 +299,7 @@
       
 
       
-        
-          
-            <h5 id="基于Spark-Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中"><a href="#基于Spark-Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中" class="headerlink" title="基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中"></a>基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中</h5><h4 id="设置日志级别"><a href="#设置日志级别" class="headerlink" title="设置日志级别"></a>设置日志级别</h4><p>log4j可以用于控制日志输出的级别<br></p>
+        <h5 id="基于Spark-Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中"><a href="#基于Spark-Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中" class="headerlink" title="基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中"></a>基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中</h5><h4 id="设置日志级别"><a href="#设置日志级别" class="headerlink" title="设置日志级别"></a>设置日志级别</h4><p>log4j可以用于控制日志输出的级别<br></p>
 <figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.log4j.&#123;<span class="type">Level</span>, <span class="type">Logger</span>&#125;</span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 设置日志级别</span></span><br><span class="line"><span class="type">Logger</span>.getRootLogger.setLevel(<span class="type">Level</span>.<span class="type">WARN</span>)</span><br></pre></td></tr></table></figure>
 
 <h4 id="创建SparkContext实例对象"><a href="#创建SparkContext实例对象" class="headerlink" title="创建SparkContext实例对象"></a>创建SparkContext实例对象</h4><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> sparkConf = <span class="keyword">new</span> <span class="type">SparkConf</span>()</span><br><span class="line">  .setMaster(<span class="string">"local[3]"</span>).setAppName(<span class="string">"EtlToHBaseSpark Application"</span>)</span><br><span class="line">  <span class="comment">// 设置使用Kryo序列化</span></span><br><span class="line">  .set(<span class="string">"spark.serializer"</span>, <span class="string">"org.apache.spark.serializer.KryoSerializer"</span>)</span><br><span class="line">  .registerKryoClasses(<span class="type">Array</span>(classOf[<span class="type">ImmutableBytesWritable</span>], classOf[<span class="type">Put</span>]))</span><br><span class="line"><span class="comment">// 构建SparkContext</span></span><br><span class="line"><span class="keyword">val</span> sc = <span class="type">SparkContext</span>.getOrCreate(sparkConf)</span><br></pre></td></tr></table></figure>
@@ -319,8 +320,6 @@
 <h3 id="广播变量"><a href="#广播变量" class="headerlink" title="广播变量"></a>广播变量</h3><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用列表List存储六种事件类型</span></span><br><span class="line"><span class="keyword">val</span> eventTypeList = <span class="type">List</span>(</span><br><span class="line">  <span class="type">EventEnum</span>.<span class="type">LAUNCH</span>, <span class="type">EventEnum</span>.<span class="type">PAGEVIEW</span>, <span class="type">EventEnum</span>.<span class="type">EVENT</span>,</span><br><span class="line">  <span class="type">EventEnum</span>.<span class="type">CHARGEREQUEST</span>, <span class="type">EventEnum</span>.<span class="type">CHARGEREFUND</span>, <span class="type">EventEnum</span>.<span class="type">CHARGESUCCESS</span></span><br><span class="line">)</span><br><span class="line"><span class="comment">// <span class="doctag">TODO:</span> 通过广播变量将事件类型的列表广播给各个Executor（存储内存中）</span></span><br><span class="line"><span class="keyword">val</span> eventTypeListBroadcast: <span class="type">Broadcast</span>[<span class="type">List</span>[<span class="type">EventEnum</span>]] = sc.broadcast(eventTypeList)</span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
     
@@ -337,131 +336,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/03/My-New-Post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/03/My-New-Post/" itemprop="url">My New Post</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-03T11:47:00+08:00">
-                2019-08-03
-              </time>
+              <a href="/2019/08/03/My-New-Post/" rel="next" title="My New Post">
+                <i class="fa fa-chevron-left"></i> My New Post
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -471,142 +367,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/02/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/02/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-02T23:01:56+08:00">
-                2019-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -614,6 +379,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -634,8 +403,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -677,6 +455,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#基于Spark-Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中"><span class="nav-number">1.</span> <span class="nav-text">基于Spark Core框架读取HDFS上的日志文件数据，进行ETL操作，最终将数据插入到HBase中</span></a></li></ol><li class="nav-item nav-level-4"><a class="nav-link" href="#设置日志级别"><span class="nav-number"></span> <span class="nav-text">设置日志级别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建SparkContext实例对象"><span class="nav-number"></span> <span class="nav-text">创建SparkContext实例对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从HDFS中读取日志文件"><span class="nav-number"></span> <span class="nav-text">从HDFS中读取日志文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解析每条日志数据"><span class="nav-number"></span> <span class="nav-text">解析每条日志数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#map-方法和mapPartition-方法"><span class="nav-number"></span> <span class="nav-text">map()方法和mapPartition()方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MapPartitions与Map对比"><span class="nav-number"></span> <span class="nav-text">MapPartitions与Map对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#广播变量"><span class="nav-number"></span> <span class="nav-text">广播变量</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -810,6 +604,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
